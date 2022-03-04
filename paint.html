@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+        .container{
+            margin: auto;
+            width: 50%;
+        }
+        .btns-container{
+            padding: 2%;
+        }
+        .btns-container button {
+            margin-right: 2%;
+            border-radius: 10%;
+            font-weight: bold;
+            background-color: blueviolet;
+            color:aqua;
+            height: 30px;
+        }
+        .btns-container button:hover {
+            background-color: red;
+            color:aqua;
+            height: 30px;
+            transform: scaleX(1.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btns-container">
+            <button id="randomLine">
+                draw random line
+            </button>
+            <button id="straightLine">
+                draw straight line
+            </button>
+            <button id="rect">
+                draw rectangle
+            </button>
+            <button id="circ">
+                draw cicle
+            </button>
+            <button id="Erase">
+                Erase
+            </button>
+            <input id="colorLine" type="color">
+        </div>
+        <canvas id="myCanvas" width="650" height="600" style="border:1px solid #000000;">
+        </canvas>
+    </div>
+    
+    <script src="paint.js">
+
+    </script>
+</body>
+</html>
